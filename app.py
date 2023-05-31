@@ -55,7 +55,6 @@ def get_info(username):
 	return info
 
 
-
-user = get_info("nugato")
-
+user = input("Instagram username: ")
+user = get_info(user)
 print(json.dumps(user,indent=4))
