@@ -17,7 +17,7 @@ def user_info(data):
 		"bussiness_email":user['business_email'],
 		"bussines_phone":user['business_phone_number'],
 		"business_category_name":user['business_category_name'],
-		"category_name":user['category_name'],
+		"category_name":user['category_name']
 	}
 	posts = []
 	profiles = []
@@ -53,7 +53,6 @@ def get_info(username):
 	data = r.json()['graphql']
 	info = user_info(data)
 	return info
-
 
 user = input("Instagram username: ")
 user = get_info(user)
